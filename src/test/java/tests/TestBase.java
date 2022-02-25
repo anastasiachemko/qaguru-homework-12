@@ -16,9 +16,10 @@ public class TestBase {
 
     @BeforeAll
     static void setUp() {
+        CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
+
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
-        CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
 
         String login = config.login();
         String password = config.password();
