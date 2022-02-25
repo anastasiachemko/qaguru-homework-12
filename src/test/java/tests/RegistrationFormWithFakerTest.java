@@ -48,7 +48,7 @@ public class RegistrationFormWithFakerTest extends TestBase {
                 .checkResultsValue("Date of Birth","10 October,2000")
                 .checkResultsValue("Subjects", "English")
                 .checkResultsValue("Hobbies", "Sports")
-                .checkResultsValue("Picture", "rafting.jpg")
+                //.checkResultsValue("Picture", "rafting.jpg")
                 .checkResultsValue("Address", userAddress)
                 .checkResultsValue("State and City", "Haryana Karnal");
 
